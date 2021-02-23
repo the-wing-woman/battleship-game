@@ -8,6 +8,7 @@ var isSunk=false;
 
 while (isSunk==false){
 	guess=prompt ("Ready, aim, fire! (Enter a number 0-6):");
+}
 	if (guess < 0 || guess > 6) {
 		alert("Please enter a valid cell number!");
 	} else {
@@ -20,6 +21,6 @@ if(hits ==3){
 			}
 		}
 	}	
-}
+
 var stats = "You took " +guesses + " guesses to sink the battleship, " + " which means your shooting accuracy was " + (3/guesses);
 alert(stats);
